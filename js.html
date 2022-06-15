@@ -14,11 +14,12 @@
             color: rgb(94, 17, 17);
             border-radius: 20px;
             font-size: larger;
+            border-color: black;
         }
         body{
             color: rgb(94, 17, 17);
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            background-color: pink;
+            background-color: rgb(250, 211, 226);
             font-size: larger;
         
         }
@@ -68,10 +69,11 @@
         function calcular(){
             var tres=document.getElementById("validar").value;
              if(tres==3){
-                 swal("Correcto");  
+                 alert("Correcto", 'success');  
             }else{
                  alert("Incorrecto"); 
              }
+             
          }
     </script>
 </body>
