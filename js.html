@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJEMPLO DE JS</title>
+    <style>
+        table{
+            font-size:larger;
+            margin: 5px;
+            padding: 2cm;
+            border-style: double;
+            color: rgb(94, 17, 17);
+            border-radius: 20px;
+            font-size: larger;
+        }
+        body{
+            color: rgb(94, 17, 17);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: pink;
+            font-size: larger;
+        
+        }
+        input,button{
+            border-radius: 20px;
+            font-size: larger;
+        }
+        
+       td{
+        font-size: xx-large;
+       } 
+    </style>
+</head>
+<body>
+    <center>
+        <br>
+        <h1> Actividades Sobre Suma</h1>
+        <br>
+        <div>
+        <table>
+            <tr>
+                <td>5</td>
+                <td>+</td>
+                <td><input class="Relleno" type="number" name="n3" id="validar"></td>
+                <td>=</td>
+                <td>8</td>
+
+            </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2"><button onclick="calcular()">Calcular</button></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    
+                    <td id="correcto"></td>
+                    <td id="incorrecto"></td>
+                    <td></td>
+                </tr>
+            </tr>
+        </table>
+       </div>
+    </center>
+    <script>
+       
+        function calcular(){
+            var tres=document.getElementById("validar").value;
+             if(tres==3){
+                 alert("Correcto");  
+            }else{
+                 alert("Incorrecto"); 
+             }
+         }
+    </script>
+</body>
+</html>
